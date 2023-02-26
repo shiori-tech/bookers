@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <%= flash[:notice] %>
+   
+<br>
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+<br>
+<p>
+  <strong>Body:</strong>
+  <%= @book.body %>
+</p>
+
+  <%= link_to "edit", edit_book_path(@book.id)   %>
+  <a href = "/books"> Back </a>
+</p>
+  </body>
+</html>
